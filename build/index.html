@@ -1,89 +1,161 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.22.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.22.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.22.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarsis Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
         }
-      });
-    </script>
-  </body>
+
+        html {
+            background: url("https://hd.unsplash.com/photo-1429962714451-bb934ecdc4ec") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .header {
+            display: block;
+            height: 50px;
+            position: relative;
+            padding: 20px 15px;
+        }
+
+        .logo {
+            float: left;
+            margin-left: 9%;
+            padding-top: 5px;
+        }
+
+        .login {
+            float: right;
+        }
+
+        button {
+            font-size: 16px;
+            line-height: 18px;
+            padding: 10px 15px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid rgb(204, 104, 104);
+            color: rgba(255, 85, 0, 0);
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .btn-2 {
+            background: rgb(255, 255, 255);
+            border: rgba(255, 85, 0, 0.846);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            line-height: 1.3;
+            color: rgb(0, 0, 0);
+        }
+        @media only screen and (max-width: 600px) {
+            .hero-container {
+                position: relative;
+                color: white;
+                width: 100%;
+                height: 500px;
+                left: 10%;
+                margin-top: 25px;
+            }
+        }
+        .hero-container {
+            position: relative;
+            color: white;
+            width: 60%;
+            height: 500px;
+            left: 10%;
+            margin-top: 25px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 100;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-weight: 100;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 100;
+            margin-bottom: 50px;
+        }
+
+        #background {
+            
+            background: #ffffff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #FDFDFF, #FDFDFF);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #FDFDFF, #FDFDFF);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="wrapper" id="background">
+        <section class="container">
+          <div class="header">
+            <div class="logo"><img margin-left="100px" height="100px" src="./aarsis_one.png" alt="" /></div>
+            <div class="login">
+              <!-- <button class="btn-1">Sign in</button>
+              <button class="btn-1">Create account</button> -->
+            </div>
+          </div>
+          <section class="hero-container">
+            <div class="text-block">
+              <h1></h1><br><br>
+              <h3>Welcome to<br />Aarsis Solutions.</h3>
+              <p style="text-align: justify;">Aarsis Solution is a visionary technology company that is dedicated to revolutionizing the world through innovative solutions. We believe in the power of dreams and the limitless possibilities that technology can unlock. With a passion for excellence and a commitment to pushing boundaries, we strive to create a better future for individuals, businesses, and communities.
+                <br><br>
+                At Aarsis Solution, we bring together a team of brilliant minds, driven by a shared purpose to transform the way we live, work, and interact. Our company is built on a foundation of cutting-edge technologies, forward-thinking strategies, and a customer-centric approach. We are constantly exploring emerging technologies, embracing digital transformation, and investing in research and development to stay at the forefront of the ever-evolving tech landscape.
+                <br><br>
+                Our dream is to harness the full potential of technology to address the most pressing challenges of our time. From artificial intelligence and machine learning to blockchain and Internet of Things (IoT), we leverage the power of these transformative technologies to create innovative solutions across various industries and sectors.
+                <br><br>
+                Whether it's developing intelligent software applications, designing immersive virtual reality experiences, or building scalable cloud infrastructure, our solutions are designed to enhance efficiency, productivity, and user experience. We collaborate closely with our clients to understand their unique needs, and together, we co-create solutions that drive tangible results and value.
+                <br><br>
+                At the heart of our dream future company is a commitment to sustainability and social responsibility. We aim to make a positive impact on the environment and society by developing eco-friendly technologies, supporting community initiatives, and fostering inclusivity and diversity in all aspects of our operations.
+                <br><br>
+                Join us on this incredible journey as we strive to shape the future with technology. Together, we can turn dreams into reality, overcome challenges, and create a world that is smarter, more connected, and filled with endless possibilities.
+                <br><br>
+                Welcome to the dream future - welcome to Aarsis Solution!
+                </p>
+            </div>
+            <div class="call-to-action">
+                <a href="https://emon.com.bd"><h2>Imran Nazir Emon</h2></a>
+                <p>Founder</p>
+                <img style="height: 35px;width: auto; margin-top: -50px; margin-left: -0%;" class="logo" src="./aarsis.png">
+            </div>
+            <section>
+            </section>
+          </section>
+</body>
+
 </html>

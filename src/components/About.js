@@ -11,9 +11,9 @@ function About() {
           <div className="col-md-6">
             <h2 className="main-title about-h2">ABOUT</h2>
             <p className="main-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              quam purus, ullamcorper id risus eu, consectetur consectetur
-              purus. Etiam sagittis in eros ac sollicitudin.
+            At Aarsis Solution, we prioritize customer satisfaction above all else. We understand that every business is unique, and we strive to deliver customized solutions that drive growth and success. With our expertise in software development, web development, and E-Commerce services, you can trust us to provide you with the highest quality solutions that propel your business forward.
+
+            Contact us today to discuss your project and let us help you unlock the full potential of your business through our exceptional software services.
             </p>
           </div>
         </div>

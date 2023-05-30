@@ -10,10 +10,9 @@ function Footer() {
           <div className="side1">
             <div className="row">
               <div className="col-md-3">
-                <h1 className="logo">DarkLeas</h1>
+                <h1 className="logo">aarsis solutions</h1>
                 <p className="footer-text">
-                  Lorem ipsum Here are thriteen health benefits of apples Lorem
-        
+                    Unleashing the Future: Moving Forward Together
                 </p>
               </div>
               <div className="col-md-3">
@@ -46,13 +45,13 @@ function Footer() {
                 <p className="footer-title">Contact</p>
                 <ul>
                   <li>
-                    <Link to="#" >burhankcd@gmail.com</Link>
+                    <Link to="#" >imran.uapcse@gmail.com</Link>
                   </li>
                   <li>
-                    <Link to="#" > Burhan #3265</Link>
+                    <Link to="#" >112/2, Sher-e-Bangla Road, Rayerbazar, Dhaka-1207</Link>
                   </li>
                   <li>
-                    <Link to="#" >0212 444 44 44</Link>
+                    <Link to="#" >+8801773580898</Link>
                   </li>
                 </ul>
               </div>
@@ -60,7 +59,7 @@ function Footer() {
                 <p className="footer-title">Social Media</p>
                 <ul>
                   <li>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/darkleas" > Github</a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/aarsis" > Github</a>
                   </li>
                   <li>
                     <a target="_blank" rel="noreferrer" href="https://twitter.com/burhankocadag0" > Twitter</a>
